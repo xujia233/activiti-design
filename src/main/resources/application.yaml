@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://192.168.2.150:1433;DatabaseName=Wx_test
+    username: sa
+    password: password
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  activiti:
+    # 自动部署验证设置:true-开启（默认） false-关闭
+    check-process-definitions: false
+
+server:
+  port: 8083
